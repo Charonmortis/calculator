@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 .container{
-    width: fit-content;
+    max-width: 190px;
     margin: auto;
     border-radius: 10px;
 
@@ -40,7 +40,14 @@ body{
 .currentResult{
     font-size: 32px;
     font-weight: bold;
+    text-align: right;
+    color: #dddddd;
+    
     margin: 0;
+    max-width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 /*
