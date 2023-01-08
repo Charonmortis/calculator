@@ -1,29 +1,28 @@
-/**
- * Operation function
- */
-
-let operator //declaring operator as a variable
-
-const operate = (num1, num2) => { //num1 and num2 gets evaluated and returned according to operator
-    num1 = parseInt(num1)
-    num2 = parseInt(num2)
-    
-    if(isNaN(num1) || isNaN(num2)){
-        return 'Please enter a number'
-    }
-
-    switch (operator) {
-        case 'division':
-            return num1 / num2
-
-        case 'product':
-            return num1 * num2
+const INPUT_FIELD = document.querySelector('#currentResult')
+console.log(INPUT_FIELD)
+INPUT_FIELD.addEventListener('keydown', (e)=>{
+    if (
+        e.key == '0' ||
+        e.key == '1' ||
+        e.key == '2' ||
+        e.key == '3' ||
+        e.key == '4' ||
+        e.key == '5' ||
+        e.key == '6' ||
+        e.key == '7' ||
+        e.key == '8' ||
+        e.key == '9' ||
         
-        case 'addition':
-            return num1 + num2
-        case 'substraction':
-            return num1 - num2
-        default:
-            return 'Please choose a correct operation'
+        e.key == '/' ||
+        e.key == '*' ||
+        e.key == '-' ||
+        e.key == '+' ||
+
+        e.key == 'Backspace' ||
+        e.key == 'Delete'
+        ) {
+            return
+    } else {
+        e.preventDefault()
     }
-}
+})
