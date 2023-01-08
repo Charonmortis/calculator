@@ -1,5 +1,9 @@
+/**
+ * RESTRICT FIELD TO NUMBERS AND ARITHMETIC OPERATORS
+ */
+
 const INPUT_FIELD = document.querySelector('#currentResult')
-console.log(INPUT_FIELD)
+
 INPUT_FIELD.addEventListener('keydown', (e)=>{
     if (
         e.key == '0' ||
@@ -26,3 +30,4 @@ INPUT_FIELD.addEventListener('keydown', (e)=>{
         e.preventDefault()
     }
 })
+
