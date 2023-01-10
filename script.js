@@ -35,6 +35,7 @@ let operationLength = 0
 
 const NUMBER_BTN = Array.from(document.querySelectorAll('.numberBtn'))
 const CLEAR_BTN = document.querySelector('#clear')    
+const REDO_BTN = document.querySelector('#Redo')
 const MISTERY = document.querySelector('#mistery')
 
 NUMBER_BTN.forEach(btn => 
@@ -77,7 +78,10 @@ CLEAR_BTN.addEventListener('click', ()=>{
     operationLength--
 })
 
-
+REDO_BTN.addEventListener('click', ()=>{
+    INPUT_FIELD.value = PREVIOUS_RESULT.textContent
+    PREVIOUS_RESULT.textContent = ''
+})
 
 MISTERY.addEventListener('click', ()=>{
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
