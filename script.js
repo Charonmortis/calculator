@@ -1,5 +1,5 @@
 /**
- * RESTRICT FIELD TO NUMBERS AND ARITHMETIC OPERATORS
+ * RESTRICTED FIELD TO NUMBERS AND ARITHMETIC OPERATORS
  */
 
 const INPUT_FIELD = document.querySelector('#currentResult')
@@ -59,6 +59,8 @@ CLEAR_BTN.addEventListener('click', ()=>{
     INPUT_FIELD.value = INPUT_FIELD.value.substring(0, INPUT_FIELD.value.length - 1);
     operationLength--
 })
+
+
 
 MISTERY.addEventListener('click', ()=>{
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
