@@ -9,6 +9,23 @@ INPUT_FIELD.addEventListener('keydown', (e)=>{
 })
 
 /**
+ * OPERATE NOW
+ */
+
+const PREVIOUS_RESULT = document.querySelector('.previousResults__element')
+const EQUAL_BUTTON = document.querySelector('#equal')
+
+
+EQUAL_BUTTON.addEventListener('click', ()=>{
+    let result = Function("return " + INPUT_FIELD.value)() 
+    //Okay, this other parenthesys are meant to be for
+    //execute the function is returned
+    
+    PREVIOUS_RESULT.textContent = INPUT_FIELD.value
+    INPUT_FIELD.value = result
+})
+
+/**
  * MAKING UI BUTTONS FUNCTIONALS
  */
 
@@ -64,21 +81,4 @@ CLEAR_BTN.addEventListener('click', ()=>{
 
 MISTERY.addEventListener('click', ()=>{
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-})
-
-/**
- * OPERATE NOW
- */
-
-const PREVIOUS_RESULT = document.querySelector('.previousResults__element')
-const EQUAL_BUTTON = document.querySelector('#equal')
-
-
-EQUAL_BUTTON.addEventListener('click', ()=>{
-    let result = Function("return " + INPUT_FIELD.value)() 
-    //Okay, this other parenthesys are meant to be for
-    //execute the function is returned
-    
-    PREVIOUS_RESULT.textContent = INPUT_FIELD.value
-    INPUT_FIELD.value = result
 })
