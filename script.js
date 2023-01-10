@@ -18,7 +18,7 @@ let operationLength = 0
 
 const NUMBER_BTN = Array.from(document.querySelectorAll('.numberBtn'))
 const CLEAR_BTN = document.querySelector('#clear')    
-const BY_MINUS_ONE = document.querySelector('#byMinusOne')
+const MISTERY = document.querySelector('#mistery')
 
 NUMBER_BTN.forEach(btn => 
     btn.addEventListener('click', (e)=>{
@@ -61,6 +61,10 @@ CLEAR_BTN.addEventListener('click', ()=>{
     operationLength--
 })
 
-BY_MINUS_ONE.addEventListener('click', ()=>{
-    INPUT_FIELD.value = `-${INPUT_FIELD.value}`
+MISTERY.addEventListener('click', ()=>{
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 })
+
+/**
+ * OPERATE NOW
+ */
